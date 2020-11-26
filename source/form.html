@@ -63,33 +63,37 @@
         <div class="profile__wrapper">
           <h2 class="visually-hidden">Мой профиль</h2>
           <form class="profile__form  profile-data" method="post" action="http://echo.htmlacademy.ru">
-            <p class="profile-data__level">
-              <span class="profile-data__level-number">80</span>
-              <span class="profile-data__level-text">level</span>
-            </p>
-            <p class="profile-data__avatar">
-              <img class="profile-data__image"
-                   width="100"
-                   height="100"
-                   src="https://via.placeholder.com/100x100"
-                   alt="Фотография пользователя">
-            </p>
-            <input type="file"
-                   class="visually-hidden"
-                   id="profile-data__upload-photo"
-                   name="profile-photo"
-                   aria-label="Загрузить фотографию">
-            <label class="profile-data__upload-photo-label  round-button  round-button--gray" for="profile-data__upload-photo">
-              Сменить фото
-            </label>
-            <textarea class="profile-data__hashtags-text-field" id="profile-data__hashtags-text-field">
-              #Бургер, #Бар, #Футбол, #Концерт,
-              #Крафт
-            </textarea>
-            <label class="profile-data__legend" for="profile-data__hashtags-text-field">Тэги</label>
-            <div class="profile-edit__transport">
-              <span class="profile-edit__legend">Транспорт</span>
-              <ul class="profile-edit__transport-list  transport-list">
+            <div class="profile-data__wrapper">
+              <p class="profile-data__level">
+                <span class="profile-data__level-number">80</span>
+                <span class="profile-data__level-text">level</span>
+              </p>
+              <p class="profile-data__avatar">
+                <img class="profile-data__image"
+                     width="100"
+                     height="100"
+                     src="https://via.placeholder.com/100x100"
+                     alt="Фотография пользователя">
+              </p>
+              <input type="file"
+                     class="visually-hidden"
+                     id="profile-data__upload-photo"
+                     name="profile-photo"
+                     aria-label="Загрузить фотографию">
+              <label class="profile-data__upload-photo-label  round-button  round-button--gray" for="profile-data__upload-photo">
+                Сменить фото
+              </label>
+            </div>
+            <div class="profile-data__hashtags">
+              <label class="profile-data__legend" for="profile-data__hashtags-text-field">Тэги</label>
+              <textarea class="profile-data__hashtags-text-field" id="profile-data__hashtags-text-field">
+                #Бургер, #Бар, #Футбол, #Концерт,
+                #Крафт
+              </textarea>
+            </div>
+            <div class="profile-data__transport">
+              <span class="profile-data__legend">Транспорт</span>
+              <ul class="profile-data__transport-list  transport-list">
                 <li class="transport-list__item  transport-list__item--airbus  transport-list__item--active">
                   <span class="transport-list__name">Авиаперелёт</span>
                 </li>
@@ -137,11 +141,17 @@
       <section class="add-plan">
         <div class="add-plan__wrapper">
           <h2 class="add-plan__title">Добавить план</h2>
-          <p class="add-plan__steps-indicators">
-            <span class="add-plan__indicator" aria-label="Выбран первый слайд"></span>
-            <span class="add-plan__indicator" aria-label="Выбран второй слайд"></span>
-            <span class="add-plan__indicator" aria-label="Выбран третий слайд"></span>
-          </p>
+          <div class="add-plan__steps-indicators">
+            <p class="add-plan__indicator  add-plan__indicator--current">
+              <span class="visually-hidden">Даты пребывания</span>
+            </p>
+            <p class="add-plan__indicator">
+              <span class="visually-hidden">Маршрут</span>
+            </p>
+            <p class="add-plan__indicator">
+              <span class="visually-hidden">Развлечения</span>
+            </p>
+          </div>
           <form class="add-plan__form  steps-form" method="post" action="http://echo.htmlacademy.ru">
             <ol class="steps-form__list  steps-list">
               <li class="steps-list__item">
@@ -186,7 +196,7 @@
                        checked>
                 <label class="steps-list__label-with-kids" for="with-kids-checkbox">Можно с детьми</label>
                 <div class="steps-list__wrapper  calendar">
-                  <p class="calender__month">
+                  <p class="calendar__month">
                     <button class="calendar__month-button  calendar__month-button--previous"
                             aria-label="Кнопка для выбора предыдущего месяца"
                             type="button"></button>
@@ -198,351 +208,351 @@
                   <table class="calendar__table">
                     <thead>
                       <tr>
-                        <th class="calender__days-of-week">Пн</th>
-                        <th class="calender__days-of-week">Вт</th>
-                        <th class="calender__days-of-week">Ср</th>
-                        <th class="calender__days-of-week">Чт</th>
-                        <th class="calender__days-of-week">Пт</th>
-                        <th class="calender__days-of-week">Сб</th>
-                        <th class="calender__days-of-week">Вс</th>
+                        <th class="calendar__days-of-week">Пн</th>
+                        <th class="calendar__days-of-week">Вт</th>
+                        <th class="calendar__days-of-week">Ср</th>
+                        <th class="calendar__days-of-week">Чт</th>
+                        <th class="calendar__days-of-week">Пт</th>
+                        <th class="calendar__days-of-week">Сб</th>
+                        <th class="calendar__days-of-week">Вс</th>
                       </tr>
                     </thead>
                     <tbody class="calendar__table-body">
-                      <tr class="calender__table-row">
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                      <tr class="calendar__table-row">
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="february-23"
                                  id="february-23"
                                  disabled>
-                          <label class=calender__label for="february-23">23</label>
+                          <label class=calendar__label for="february-23">23</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="february-24"
                                  id="february-24"
                                  disabled>
-                          <label class=calender__label for="february-24">24</label>
+                          <label class=calendar__label for="february-24">24</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="february-25"
                                  id="february-25"
                                  disabled>
-                          <label class=calender__label for="february-25">25</label>
+                          <label class=calendar__label for="february-25">25</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="february-26"
                                  id="february-26"
                                  disabled>
-                          <label class=calender__label for="february-26">26</label>
+                          <label class=calendar__label for="february-26">26</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="february-27"
                                  id="february-27"
                                  disabled>
-                          <label class=calender__label for="february-27">27</label>
+                          <label class=calendar__label for="february-27">27</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="february-28"
                                  id="february-28"
                                  disabled>
-                          <label class=calender__label for="february-28">28</label>
+                          <label class=calendar__label for="february-28">28</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-1"
                                  id="march-1"
                                  disabled>
-                          <label class=calender__label for="march-1">1</label>
+                          <label class=calendar__label for="march-1">1</label>
                         </td>
                       </tr>
-                      <tr class="calender__table-row">
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                      <tr class="calendar__table-row">
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-2"
                                  id="march-2"
                                  disabled>
-                          <label class=calender__label for="march-2">2</label>
+                          <label class=calendar__label for="march-2">2</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-3"
                                  id="march-3"
                                  disabled>
-                          <label class=calender__label for="march-3">3</label>
+                          <label class=calendar__label for="march-3">3</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-4"
                                  id="march-4"
                                  disabled>
-                          <label class=calender__label for="march-4">4</label>
+                          <label class=calendar__label for="march-4">4</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-5"
                                  id="march-5"
                                  disabled>
-                          <label class=calender__label for="march-5">5</label>
+                          <label class=calendar__label for="march-5">5</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-6"
                                  id="march-6"
                                  disabled>
-                          <label class=calender__label for="march-6">6</label>
+                          <label class=calendar__label for="march-6">6</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-7"
                                  id="march-7"
                                  disabled>
-                          <label class=calender__label for="march-7">7</label>
+                          <label class=calendar__label for="march-7">7</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-8"
                                  id="march-8"
                                  disabled>
-                          <label class=calender__label for="march-8">8</label>
+                          <label class=calendar__label for="march-8">8</label>
                         </td>
                       </tr>
-                      <tr class="calender__table-row">
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                      <tr class="calendar__table-row">
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-9"
                                  id="march-9"
                                  disabled>
-                          <label class=calender__label for="march-9">9</label>
+                          <label class=calendar__label for="march-9">9</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-10"
                                  id="march-10"
                                  disabled>
-                          <label class=calender__label for="march-10">10</label>
+                          <label class=calendar__label for="march-10">10</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-11"
                                  id="march-11"
                                  disabled>
-                          <label class=calender__label for="march-11">11</label>
+                          <label class=calendar__label for="march-11">11</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-12"
                                  id="march-12"
                                  disabled>
-                          <label class=calender__label for="march-12">12</label>
+                          <label class=calendar__label for="march-12">12</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-13"
                                  id="march-13"
                                  disabled>
-                          <label class=calender__label for="march-13">13</label>
+                          <label class=calendar__label for="march-13">13</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-14"
                                  id="march-14"
                                  disabled>
-                          <label class=calender__label for="march-14">14</label>
+                          <label class=calendar__label for="march-14">14</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-15"
                                  id="march-15"
                                  disabled>
-                          <label class=calender__label for="march-15">15</label>
+                          <label class=calendar__label for="march-15">15</label>
                         </td>
                       </tr>
-                      <tr class="calender__table-row">
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                      <tr class="calendar__table-row">
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-16"
                                  id="march-16"
                                  disabled>
-                          <label class=calender__label for="march-16">16</label>
+                          <label class=calendar__label for="march-16">16</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-17"
                                  id="march-17"
                                  disabled>
-                          <label class=calender__label for="march-17">17</label>
+                          <label class=calendar__label for="march-17">17</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-18"
                                  id="march-18"
                                  disabled>
-                          <label class=calender__label for="march-18">18</label>
+                          <label class=calendar__label for="march-18">18</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-19"
                                  id="march-19"
                                  disabled>
-                          <label class=calender__label for="march-19">19</label>
+                          <label class=calendar__label for="march-19">19</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-20"
                                  id="march-20"
                                  disabled>
-                          <label class=calender__label for="march-20">20</label>
+                          <label class=calendar__label for="march-20">20</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-21"
                                  id="march-21"
                                  disabled>
-                          <label class=calender__label for="march-21">21</label>
+                          <label class=calendar__label for="march-21">21</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-22"
                                  id="march-22"
                                  disabled>
-                          <label class=calender__label for="march-22">22</label>
+                          <label class=calendar__label for="march-22">22</label>
                         </td>
                       </tr>
-                      <tr class="calender__table-row">
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                      <tr class="calendar__table-row">
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-23"
                                  id="march-23"
                                  disabled>
-                          <label class=calender__label for="march-23">23</label>
+                          <label class=calendar__label for="march-23">23</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-24"
                                  id="march-24"
                                  disabled>
-                          <label class=calender__label for="march-24">24</label>
+                          <label class=calendar__label for="march-24">24</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-25"
                                  id="march-25"
                                  disabled>
-                          <label class=calender__label for="march-25">25</label>
+                          <label class=calendar__label for="march-25">25</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-26"
                                  id="march-26">
-                          <label class=calender__label for="march-26">26</label>
+                          <label class=calendar__label for="march-26">26</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-27"
                                  id="march-27">
-                          <label class=calender__label for="march-27">27</label>
+                          <label class=calendar__label for="march-27">27</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-28"
                                  id="march-28">
-                          <label class=calender__label for="march-28">28</label>
+                          <label class=calendar__label for="march-28">28</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-29"
                                  id="march-29">
-                          <label class=calender__label for="march-29">29</label>
+                          <label class=calendar__label for="march-29">29</label>
                         </td>
                       </tr>
-                      <tr class="calender__table-row">
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                      <tr class="calendar__table-row">
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-30"
                                  id="march-30">
-                          <label class=calender__label for="march-30">30</label>
+                          <label class=calendar__label for="march-30">30</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="march-31"
                                  id="march-31">
-                          <label class=calender__label for="march-31">31</label>
+                          <label class=calendar__label for="march-31">31</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="april-1"
                                  id="april-1">
-                          <label class=calender__label for="april-1">1</label>
+                          <label class=calendar__label for="april-1">1</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="april-2"
                                  id="april-2">
-                          <label class=calender__label for="april-2">2</label>
+                          <label class=calendar__label for="april-2">2</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="april-3"
                                  id="april-3">
-                          <label class=calender__label for="april-3">3</label>
+                          <label class=calendar__label for="april-3">3</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="april-4"
                                  id="april-4">
-                          <label class=calender__label for="april-4">4</label>
+                          <label class=calendar__label for="april-4">4</label>
                         </td>
-                        <td class="calender__table-cell">
-                          <input class="calender__table-input  visually-hidden"
+                        <td class="calendar__table-cell">
+                          <input class="calendar__table-input  visually-hidden"
                                  type="checkbox"
                                  name="april-5"
                                  id="april-5">
-                          <label class=calender__label for="april-5">5</label>
+                          <label class=calendar__label for="april-5">5</label>
                         </td>
                       </tr>
                     </tbody>
@@ -627,8 +637,8 @@
                   <label class="steps-list__action-label" for="action-bosnia">
                     Босния и Герцеговина
                   </label>
-                  <p class="=steps-list__flag-wrapper">
-                    <img class="country-flag__flag-img"
+                  <p class="steps-list__flag">
+                    <img class="steps-list__flag-img"
                          src="https://via.placeholder.com/35x24"
                          width="35"
                          height="24"
@@ -640,8 +650,8 @@
                   <label class="steps-list__action-label" for="action-czech">
                     Чехия
                   </label>
-                  <p class="=steps-list__flag-wrapper">
-                    <img class="country-flag__flag-img"
+                  <p class="steps-list__flag">
+                    <img class="steps-list__flag-img"
                          src="https://via.placeholder.com/35x24"
                          width="35"
                          height="24"
