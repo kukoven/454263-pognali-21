@@ -1,0 +1,84 @@
+.directions {
+  background-color: $blue;
+}
+
+.directions__wrapper {
+  padding-top: 71px;
+  padding-bottom: 34px;
+
+  background-color: $light-gray-background;
+
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.directions__title {
+  margin: 0;
+  margin-bottom: 19px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $orange;
+}
+
+.directions__text {
+  margin: 0;
+  margin-bottom: 60px;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  color: $gray;
+}
+
+.directions__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.directions__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.directions__item:last-child {
+  margin-bottom: 25px;
+}
+
+.directions__country-description {
+  position: relative;
+  z-index: 1;
+
+  margin: 0;
+  margin-top: -21px;
+
+  background-color: $white;
+
+  border-radius: 10px;
+}
+
+.directions__country-name {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.directions__country-tagline,
+.directions__users {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: rgba($gray, 0.3);
+}
+
+.directions__users {
+  line-height: 20px;
+}
+
+.directions__show-all-button {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+}

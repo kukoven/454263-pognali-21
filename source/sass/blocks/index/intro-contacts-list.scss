@@ -1,0 +1,20 @@
+.intro-contacts-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.intro-contacts-list__link {
+  font-size: 17px;
+  line-height: 20px;
+
+  &--telephone {
+    background-color: $orange;
+  }
+
+  &--email {
+    background-color: $yellow;
+  }
+}
+

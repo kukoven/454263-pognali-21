@@ -1,0 +1,28 @@
+.modal-business-tariff {
+  display: none;
+
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.modal-business-tariff__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $orange;
+}
+
+.modal-business-tariff__close-button {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $extra-light-blue;
+
+  text-transform: uppercase;
+
+  background-color: $light-gray;
+
+  border: none;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}

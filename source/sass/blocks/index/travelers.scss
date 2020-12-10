@@ -1,0 +1,101 @@
+.travelers {
+  background-color: $gray-background;
+}
+
+.travelers__wrapper {
+  padding-top: 68px;
+  padding-bottom: 31px;
+
+  background-image: url("../img/back.svg"), url("../img/travelers-back-1.png"), url("../img/travelers-back-2.png");
+  background-repeat: no-repeat;
+  background-position: left 68px, 200px 68px, left 200px;
+  background-color: $blue;
+
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.travelers__title {
+  margin: 0;
+  margin-bottom: 19px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $orange;
+}
+
+.travelers__text,
+.travelers__tagline {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  color: $white;
+}
+
+.travelers__tagline {
+  display: block;
+
+  margin-bottom: 54px;
+  font-weight: 700;
+}
+
+.travelers__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.travelers__level-number {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $white;
+}
+
+.travelers__level-text {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: $white;
+}
+
+.travelers__user-data-wrapper {
+  margin-bottom: 9px;
+
+  background-color: $white;
+
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.travelers__user-data-wrapper:last-child {
+  margin-bottom: 20px;
+}
+
+.travelers__name {
+  display: block;
+
+  margin-bottom: 15px;
+
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $extra-light-blue;
+
+  text-decoration: none;
+}
+
+.travelers__hashtags-list {
+  margin-bottom: 14px;
+}
+
+.travelers__show-all-button {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+}

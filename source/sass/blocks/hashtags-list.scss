@@ -1,0 +1,19 @@
+.hashtags-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.hashtags-list__link {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $gray;
+
+  text-decoration: none;
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}
