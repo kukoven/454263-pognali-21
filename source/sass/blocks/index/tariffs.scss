@@ -20,26 +20,20 @@
 }
 
 .tariffs__tagline {
+  @include orange-title();
+
   display: block;
 
   margin-bottom: 56px;
-
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 700;
-  color: $orange;
 }
 
 .tariffs__list {
-  margin: 0;
-  padding: 0;
+  @include reset-list();
 
   font-size: 16px;
   line-height: 16px;
   font-weight: 300;
   color: $gray;
-
-  list-style: none;
 }
 
 .tariffs__number {

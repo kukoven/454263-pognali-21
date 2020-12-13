@@ -1,5 +1,6 @@
 //global
 
+@import "global/mixins.scss";
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/global.scss";
@@ -32,4 +33,3 @@
 @import "blocks/index/review.scss";
 @import "blocks/index/intro.scss";
 @import "blocks/index/about.scss";
-

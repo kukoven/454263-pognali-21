@@ -13,13 +13,9 @@
 }
 
 .directions__title {
-  margin: 0;
-  margin-bottom: 19px;
+  @include orange-title();
 
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 700;
-  color: $orange;
+  margin-bottom: 19px;
 }
 
 .directions__text {
@@ -33,10 +29,7 @@
 }
 
 .directions__list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  @include reset-list();
 }
 
 .directions__item:not(:last-child) {

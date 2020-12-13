@@ -6,10 +6,7 @@
 }
 
 .modal-business-tariff__title {
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 700;
-  color: $orange;
+  @include orange-title();
 }
 
 .modal-business-tariff__close-button {
