@@ -1,0 +1,35 @@
+.feedback {
+  background-color: $light-yellow;
+}
+
+.feedback__wrapper {
+  padding-top: 73px;
+  padding-bottom: 37px;
+
+  background-color: $blue;
+
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.feedback__tagline {
+  @include orange-title();
+
+  display: block;
+
+  padding-bottom: 19px;
+}
+
+.feedback__registration-text,
+.feedback__have-questions-text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  color: $white;
+}
+
+.feedback__log-in {
+  color: $light-yellow;
+
+  text-decoration: none;
+}

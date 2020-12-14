@@ -1,0 +1,16 @@
+.hashtags-list {
+  @include reset-list();
+}
+
+.hashtags-list__link {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $gray;
+
+  text-decoration: none;
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}

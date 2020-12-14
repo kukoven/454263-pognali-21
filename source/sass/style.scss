@@ -1,1 +1,35 @@
-// Начните писать стили здесь
+//global
+
+@import "global/mixins.scss";
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/global.scss";
+
+//blocks
+
+@import "blocks/main-footer.scss";
+@import "blocks/transport-list.scss";
+@import "blocks/hashtags-list.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/round-button.scss";
+@import "blocks/contacts.scss";
+@import "blocks/social-list.scss";
+
+//index
+
+@import "blocks/index/modal-business-tariff.scss";
+@import "blocks/index/map.scss";
+@import "blocks/index/route.scss";
+@import "blocks/index/registration-form.scss";
+@import "blocks/index/feedback.scss";
+@import "blocks/index/tariffs.scss";
+@import "blocks/index/countries-list.scss";
+@import "blocks/index/travelers.scss";
+@import "blocks/index/directions.scss";
+@import "blocks/index/using-list.scss";
+@import "blocks/index/intro-contacts-list.scss";
+@import "blocks/index/review.scss";
+@import "blocks/index/intro.scss";
+@import "blocks/index/about.scss";

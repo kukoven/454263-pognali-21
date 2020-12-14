@@ -1,0 +1,34 @@
+.intro {
+  font-weight: 700;
+
+  background-image: linear-gradient(to bottom, $dark-blue 618px, $blue 618px);
+}
+
+.intro__wrapper {
+  background-image: url("../img/traveller-illustration-mobile-1.png"), url("../img/globe-back-mobile-1.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 192px 255px, 320px 568px;
+  background-position: 79px 147px, 0 -6px;
+}
+
+.intro__tagline {
+  display: block;
+
+  margin-bottom: 245px;
+
+  font-size: 36px;
+  line-height: 40px;
+  color: $white;
+}
+
+.intro__contacts-list {
+  margin-bottom: 28px;
+}
+
+.intro__review {
+  margin-bottom: 29px;
+}
+
+.intro__using-list {
+  padding-bottom: 38px;
+}

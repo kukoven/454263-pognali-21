@@ -1,0 +1,16 @@
+.intro-contacts-list {
+  @include reset-list();
+}
+
+.intro-contacts-list__link {
+  font-size: 17px;
+  line-height: 20px;
+
+  &--telephone {
+    background-color: $orange;
+  }
+
+  &--email {
+    background-color: $yellow;
+  }
+}

@@ -1,0 +1,32 @@
+.about {
+  background-color: $light-gray-background;
+}
+
+.about__wrapper {
+  padding-top: 32px;
+  padding-bottom: 82px;
+
+  background-image: url("../img/about-mobile.png"), url("../img/back.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 292px 353px, 113px 132px;
+  background-color: $blue;
+
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.about__title {
+  @include orange-title();
+}
+
+.about__text,
+.about__advice {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  color: $white;
+}
+
+.about__advice {
+  font-weight: 700;
+}
