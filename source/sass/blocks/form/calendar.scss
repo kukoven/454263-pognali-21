@@ -1,0 +1,65 @@
+.calendar__month {
+  margin: 0;
+  margin-bottom: 33px;
+
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.calendar__days-of-week {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $gray;
+
+  &--dark-orange {
+    color: $dark-orange;
+  }
+}
+
+.calendar__table-cell {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.calendar__table-input:disabled + .calendar__label {
+  font-weight: 400;
+  color: $gray;
+
+  background-color: $white;
+
+  opacity: 0.3;
+}
+
+.calendar__label {
+  color: $extra-light-blue;
+
+  border: 2px solid transparent;
+
+  background-color: $light-gray-background;
+
+  &--choose {
+    color: $white;
+
+    border: 2px solid $dark-orange;
+
+    background-color: $extra-light-blue;
+  }
+
+  &--active {
+    color: $white;
+
+    background-color: $extra-light-blue;
+  }
+
+  &:hover,
+  &:focus {
+    color: $white;
+
+    border: 2px solid $dark-orange;
+
+    background-color: $extra-light-blue;
+  }
+}

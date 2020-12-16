@@ -1,0 +1,98 @@
+.steps-list {
+  @include reset-list();
+}
+
+.steps-list__item {
+  margin-bottom: 10px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  background-color: $white;
+}
+
+.steps-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.steps-list__title {
+  margin: 0;
+  margin-bottom: 16px;
+
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.steps-list__text {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: $gray;
+}
+
+.steps-list__label-first-step {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+
+  text-transform: uppercase;
+
+  &--opacity {
+    letter-spacing: 0.07em;
+
+    opacity: 0.3;
+  }
+}
+
+.steps-list__travelers-amount,
+.steps-list__duration {
+  @include font();
+
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  color: $extra-light-blue;
+}
+
+.steps-list__label-with-kids {
+  display: block;
+
+  margin-bottom: 28px;
+}
+
+.steps-list__calendar-wrapper {
+  margin-bottom: 22px;
+}
+
+.steps-list__switch {
+  margin: 0;
+}
+
+.steps-list__action-label {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.steps-list__action-text {
+  @include font();
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: $gray;
+
+  &--opacity::placeholder {
+    color: rgba($gray, 0.3);
+  }
+}
+
+.steps-list__submit-button {
+  @include font();
+
+  letter-spacing: normal;
+}

@@ -1,0 +1,14 @@
+.modal-country-list {
+  @include reset-list();
+
+  text-transform: none;
+}
+
+.modal-country-list__name {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: $gray;
+
+  text-decoration: none;
+}

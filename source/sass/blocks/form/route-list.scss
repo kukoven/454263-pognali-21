@@ -1,0 +1,29 @@
+.route-list {
+  @include reset-list();
+}
+
+.route-list__input {
+  @include font();
+
+  margin-bottom: 22px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  color: $extra-light-blue;
+
+  text-transform: uppercase;
+
+  &--blue-background {
+    background-color: $light-gray-background;
+  }
+
+  &:last-of-type {
+    margin-bottom: 25px;
+  }
+}
+
+.route-list__flag-wrapper {
+  margin: 0;
+}

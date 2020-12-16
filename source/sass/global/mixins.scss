@@ -13,3 +13,12 @@
   font-weight: 700;
   color: $orange;
 }
+
+@mixin blue-title() {
+  @include orange-title();
+  color: $extra-light-blue;
+}
+
+@mixin font() {
+  font-family: "Bloggersans", "Open Sans", sans-serif;
+}

@@ -1,0 +1,26 @@
+.profile-data__level {
+  margin: 0;
+}
+
+.profile-data__level-number {
+  font-size: 38px;
+  line-height: 38px;
+  font-weight: 700;
+  color: $dark-blue;
+}
+
+.profile-data__level-text {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $gray;
+}
+
+.profile-data__legend {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $extra-light-blue;
+
+  text-transform: uppercase;
+}
