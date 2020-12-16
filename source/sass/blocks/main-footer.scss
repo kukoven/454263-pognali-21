@@ -1,12 +1,10 @@
 .main-footer {
   background-color: $white;
-
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 
   &--dark-blue-background {
     background-color: $form-page-dark-blue-background;
-
     border-radius: 0;
   }
 }
