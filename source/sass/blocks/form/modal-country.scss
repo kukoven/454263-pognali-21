@@ -1,0 +1,21 @@
+.modal-country {
+  display: none;
+
+  text-transform: uppercase;
+
+  background-color: $white;
+}
+
+.modal-country__wrapper:first-child {
+  background-color: $extra-light-blue;
+}
+
+.modal-country__title {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: $white;
+}

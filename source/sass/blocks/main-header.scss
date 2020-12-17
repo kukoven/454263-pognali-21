@@ -1,5 +1,9 @@
 .main-header {
   background-color: $dark-blue;
+
+  &--form-page-background {
+    background-color: $form-page-blue-background;
+  }
 }
 
 .main-header__wrapper {

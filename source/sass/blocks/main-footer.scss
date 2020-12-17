@@ -1,13 +1,36 @@
 .main-footer {
   background-color: $white;
-
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+
+  &--dark-blue-background {
+    background-color: $form-page-dark-blue-background;
+    border-radius: 0;
+  }
 }
 
 .main-footer__wrapper {
   padding-top: 37px;
   padding-bottom: 18px;
+
+  &--white-background {
+    background-color: $white;
+
+    border-radius: 25px 25px 0 0;
+  }
+}
+
+.main-footer__logo {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.main-footer__social-list {
+  margin-bottom: 50px;
+}
+
+.main-footer__copyright {
+  margin: 0;
 }
 
 .main-footer__developed {

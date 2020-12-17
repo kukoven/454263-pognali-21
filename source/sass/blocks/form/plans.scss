@@ -1,0 +1,70 @@
+.plans {
+  background-color: $light-gray-background;
+}
+
+.plans__wrapper {
+  padding-top: 28px;
+  padding-bottom: 31px;
+
+  background-color: $gray-button;
+
+  border-radius: 25px 25px 0 0;
+}
+
+.plans__title {
+  @include blue-title();
+
+  margin-bottom: 29px;
+}
+
+.plans__list {
+  @include reset-list();
+
+  color: $extra-light-blue;
+}
+
+.plans__item {
+  background-color: $white;
+}
+
+.plans__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.plans__country {
+  @include blue-title();
+
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.plans__number {
+  font-weight: 500;
+}
+
+.plans__text {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+}
+
+.plans__text:nth-of-type(even) {
+  margin-bottom: 24px;
+}
+
+.plans__change {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  color: $black;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0.3;
+}

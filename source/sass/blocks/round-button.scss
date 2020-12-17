@@ -19,4 +19,49 @@
 
     border-radius: 10px;
   }
+
+  &--gray {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+
+    text-transform: uppercase;
+
+    background-color: $gray-button;
+
+    &:hover,
+    &:focus {
+      background-color: $gray-button-hover;
+    }
+
+    &:active {
+      color: rgba($dark-blue, 0.3);
+    }
+  }
+
+  &--uppercase-and-extra-light-blue {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 700;
+    color: $extra-light-blue;
+
+    text-transform: uppercase;
+  }
+
+  &--transparent-background {
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+
+      opacity: 0.7;
+    }
+
+    &:active {
+      background-color: transparent;
+
+      opacity: 0.3;
+    }
+  }
 }

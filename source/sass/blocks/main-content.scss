@@ -1,0 +1,19 @@
+.main-content__wrapper {
+  &--light-gray-background {
+    background-color: $light-gray-background;
+  }
+}
+
+.main-content__title {
+  margin: 0;
+  padding-bottom: 12px;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: $white;
+
+  background-color: $form-page-blue-background;
+
+  border-radius: 0 0 20px 20px;
+}

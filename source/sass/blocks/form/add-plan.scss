@@ -1,0 +1,36 @@
+.add-plan {
+  color: $extra-light-blue;
+
+  background-color: $gray-button;
+}
+
+.add-plan__wrapper {
+  padding-top: 30px;
+  padding-bottom: 43px;
+
+  background-color: $form-page-dark-blue-background;
+
+  border-radius: 25px 25px 0 0;
+}
+
+.add-plan__title {
+  @include blue-title();
+
+  margin-bottom: 29px;
+}
+
+.add-plan__indicator {
+  margin: 0;
+
+  width: 5px;
+  height: 5px;
+
+  background-color: $extra-light-blue;
+  border-radius: 25px;
+
+  opacity: 0.3;
+
+  &--current {
+    opacity: 1;
+  }
+}
