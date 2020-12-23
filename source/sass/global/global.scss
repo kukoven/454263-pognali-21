@@ -20,4 +20,8 @@ img {
   font-family: "Bloggersans", "Open Sans", sans-serif;
 
   background-color: $blue;
+
+  &--light-gray-background {
+    background-color: $light-gray-background;
+  }
 }

@@ -1,0 +1,21 @@
+.alphabet {
+  @include reset-list();
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: $extra-light-blue;
+
+  &--line-height .alphabet__label {
+    line-height: 18px;
+  }
+}
+
+.alphabet__label {
+  &--active {
+    color: $white;
+
+    background-color: $extra-light-blue;
+  }
+}

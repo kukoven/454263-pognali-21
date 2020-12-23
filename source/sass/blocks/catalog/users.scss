@@ -1,0 +1,29 @@
+.users__user-profile:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.users__show-more-button {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 18px;
+
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $extra-light-blue;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.users__pagination {
+  display: flex;
+  margin: 0;
+  margin-bottom: 46px;
+}
+
+.users__pagination-button {
+  width: 134px;
+  height: 51px;
+
+  background-color: $white;
+}
