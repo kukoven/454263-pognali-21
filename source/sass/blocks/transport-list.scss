@@ -1,3 +1,7 @@
 .transport-list {
   @include reset-list();
 }
+
+.transport-list__name {
+  display: none;
+}

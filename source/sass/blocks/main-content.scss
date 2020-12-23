@@ -2,6 +2,10 @@
   &--light-gray-background {
     background-color: $light-gray-background;
   }
+
+  &--dark-gray-background {
+    background-color: $dark-gray-background;
+  }
 }
 
 .main-content__title {
@@ -16,4 +20,12 @@
   background-color: $form-page-blue-background;
 
   border-radius: 0 0 20px 20px;
+}
+
+.main-content__filter {
+  margin-bottom: 21px;
+}
+
+.main-content__travelers-form {
+  margin-bottom: 28px;
 }

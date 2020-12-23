@@ -1,0 +1,66 @@
+.user-profile {
+  padding-top: 15px;
+  padding-right: 22px;
+  padding-bottom: 23px;
+  padding-left: 25px;
+
+  border-radius: 20px;
+  background-color: $white;
+}
+
+.user-profile__header {
+  margin-bottom: 13px;
+}
+
+.user-profile__avatar {
+  margin: 0;
+}
+
+.user-profile__name {
+  margin: 0;
+
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $extra-light-blue;
+}
+
+.user-profile__hashtags-list {
+  margin-bottom: 16px;
+}
+
+.user-profile__to-visit-text,
+.user-profile__transport-text,
+.user-profile__level-text {
+  display: block;
+  margin-bottom: 19px;
+
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $gray;
+}
+
+.user-profile__wishes-country-list {
+  @include reset-list();
+
+  margin-bottom: 12px;
+}
+
+.user-profile__wishes-country-item {
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 500;
+  color: $extra-light-blue;
+  text-transform: uppercase;
+}
+
+.user-profile__level {
+  margin: 0;
+  margin-bottom: 14px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $extra-light-blue;
+}

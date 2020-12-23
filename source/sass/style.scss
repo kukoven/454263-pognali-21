@@ -7,6 +7,8 @@
 
 //blocks
 
+@import "blocks/likes.scss";
+@import "blocks/alphabet";
 @import "blocks/social-list.scss";
 @import "blocks/main-footer.scss";
 @import "blocks/transport-list.scss";
@@ -38,7 +40,6 @@
 //form
 
 @import "blocks/form/modal-country-list.scss";
-@import "blocks/form/alphabet.scss";
 @import "blocks/form/modal-country.scss";
 @import "blocks/form/route-list.scss";
 @import "blocks/form/calendar.scss";
@@ -47,3 +48,12 @@
 @import "blocks/form/plans.scss";
 @import "blocks/form/profile-data.scss";
 @import "blocks/form/profile.scss";
+
+//catalog
+
+@import "blocks/catalog/user-profile.scss";
+@import "blocks/catalog/users.scss";
+@import "blocks/catalog/choice-list.scss";
+@import "blocks/catalog/travelers-form.scss";
+@import "blocks/catalog/catalog-country-list.scss";
+@import "blocks/catalog/country-filter.scss";
